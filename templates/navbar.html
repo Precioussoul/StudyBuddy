@@ -1,9 +1,11 @@
-<ul>
-    <li>
-        <a href="/">LOGO</a>
-    </li>
-    <li>
-        <a href="room/">Room</a>
-    </li>
-</ul>
-<hr>
+<a href="/">
+  <h1 class="">LOGO</h1>
+</a>
+
+<form method="GET" action="{% url 'home' %}" class="">
+  <input type="text" name="q" placeholder="Search Rooms" />
+</form>
+
+<a href="{% url 'login' %}" class="">Login</a>
+
+<hr />
